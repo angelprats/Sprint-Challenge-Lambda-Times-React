@@ -1,5 +1,6 @@
 import React from 'react';
 import Tab from './Tab';
+import PropTypes from 'prop-types';
 
 
 const Tabs = props => {
@@ -7,13 +8,13 @@ const Tabs = props => {
     <div className="tabs">
       <div className="topics">
         <span className="title">TRENDING TOPICS:</span>
-        {props.tabs.map(props => (
-          <Tab
-            tabs={props.tabs}
+        {props.tabs.map(tab => {
+          return
+          <Tab selectTabHandler={props.selectTabHandler}
             selectedTab={props.selectedTab}
-            selectTabHandler={props.selectTabHandler}
-          />
-        ))}
+            tab={tab} />
+
+        })}
         {/* map over the tabs provided on your props, create a new Tab component for each one.
             give the tab component a `selectTabHandler`, the `selectedTab`, and the `tab` itself as props*/}
       </div>
@@ -22,15 +23,10 @@ const Tabs = props => {
 };
 
 
-// Tabs.propTypes = {
-//   tab: PropTypes.arrayOf(
-//     PropTypes.shape({
-//       headline: PropTypes.string,
-//       tab: PropTypes.string,
-//       img: PropTypes.string,
-//       author: PropTypes.string,
-//     })
-//   )
-// }
+Tabs.propTypes = {
+  tabs: PropTypes.object,
+  selectedTab: PropTypes.string,
+  selectTabHandler: PropTypes.function,
+}
 // Make sure to use PropTypes to validate your types!
 export default Tabs;
