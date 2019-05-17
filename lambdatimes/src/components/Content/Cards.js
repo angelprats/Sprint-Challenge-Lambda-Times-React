@@ -4,11 +4,9 @@ import Card from './Card';
 const Cards = props => {
   return (
     <div className="cards-container">
-      {props.Cards.map(card => (
+      {props.cards.map(card => (
         <Card card={card} />
       ))}
-
-
 
 
       {/* Using the cards prop, map over the list creating a 
@@ -17,6 +15,16 @@ const Cards = props => {
   )
 }
 
+// Tabs.propTypes = {
+//   tab: PropTypes.arrayOf(
+//     PropTypes.shape({
+//       headline: PropTypes.string,
+//       tab: PropTypes.string,
+//       img: PropTypes.string,
+//       author: PropTypes.string,
+//     })
+//   )
+// }
 
 // Make sure you include prop types for all of your incoming props
 
