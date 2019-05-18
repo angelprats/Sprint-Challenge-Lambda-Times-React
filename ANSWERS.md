@@ -14,3 +14,20 @@ A component can take an argument, add functionality and return it.
 - [ ] What are three different ways to style components in React? Explain some of the benefits of each.
 1. Reacstrap - comes with pre-built styled components.
 2. Styled components - implements JSX so we can style in javascript.
+
+
+## Careers HW
+
+1. Specific - Pepare portfolios
+            - Prepare resume.
+            - Create a network, participate in social media discussions.
+
+2. Measurable - 
+
+3. Achievable - Complete career services assignments and implement them.
+              - Speak to people in my region with tech backgrounds.
+
+4. Relevant - Interactions with career team.
+            - Network with people in the field, share goals, ask questions.
+
+5. Time Bound - Reach out for five informational interviews a week. 
