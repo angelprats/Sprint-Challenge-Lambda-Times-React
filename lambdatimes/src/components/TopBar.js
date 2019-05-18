@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 
 
-const Topbar = styled.div`
+const TopContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
@@ -77,7 +77,7 @@ const SpanRight = styled.div`
 
 const TopBar = () => {
   return (
-    <TopBar>
+    <TopContainer>
       <Container>
         <LeftContainer>
           <LeftSpan>TOPICS</LeftSpan><span>SEARCH</span>
@@ -91,7 +91,7 @@ const TopBar = () => {
           <SpanRight>LOG IN</SpanRight>
         </RightContainer>
       </Container>
-    </TopBar>
+    </TopContainer>
   )
 }
 
